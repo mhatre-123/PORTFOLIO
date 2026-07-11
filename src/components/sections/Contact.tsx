@@ -5,8 +5,8 @@ import { Mail, Phone, MapPin, Send, MessageSquare } from 'lucide-react';
 
 export const Contact: React.FC = () => {
   return (
-    <section id="contact" className="section-container">
-      <div className="grid lg:grid-cols-5 gap-16 items-start">
+    <section id="contact" className="bg-slate-50">
+      <div className="section-container grid lg:grid-cols-5 gap-10 lg:gap-16 items-start">
         <div className="lg:col-span-2">
           <SectionTitle 
             title="Start a Conversation" 
@@ -27,14 +27,14 @@ export const Contact: React.FC = () => {
                 initial={{ opacity: 0, x: -20 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ delay: i * 0.1 }}
-                className="flex items-center gap-6 p-6 glass rounded-3xl group cursor-pointer"
+                className="flex items-center gap-4 sm:gap-6 p-4 sm:p-6 glass rounded-3xl group cursor-pointer"
               >
                 <div className={`w-14 h-14 rounded-2xl flex items-center justify-center transition-transform group-hover:scale-110 ${item.color}`}>
                   {item.icon}
                 </div>
                 <div>
                    <p className="text-xs font-black text-slate-400 uppercase tracking-widest mb-1">{item.label}</p>
-                   <p className="text-lg font-black text-slate-900">{item.val}</p>
+                   <p className="text-base sm:text-lg font-black text-slate-900 break-all">{item.val}</p>
                 </div>
               </motion.div>
             ))}
@@ -45,7 +45,7 @@ export const Contact: React.FC = () => {
           <motion.div 
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
-            className="glass p-12 rounded-[3.5rem] bg-white relative overflow-hidden shadow-2xl"
+            className="glass p-6 sm:p-12 rounded-3xl sm:rounded-[3.5rem] bg-white relative overflow-hidden shadow-2xl"
           >
             <div className="absolute top-0 right-0 w-32 h-32 bg-primary-500/5 rounded-full -mr-16 -mt-16"></div>
             
@@ -53,7 +53,7 @@ export const Contact: React.FC = () => {
               <MessageSquare className="text-primary-500" /> Send a Message
             </h3>
             
-            <form className="grid md:grid-cols-2 gap-8" onSubmit={e => e.preventDefault()}>
+            <form className="grid md:grid-cols-2 gap-5 sm:gap-8" onSubmit={e => e.preventDefault()}>
               <div className="space-y-3">
                 <label className="text-sm font-black text-slate-500 uppercase tracking-widest ml-1 text-[10px]">Your Name</label>
                 <input 

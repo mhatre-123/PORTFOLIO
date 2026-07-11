@@ -5,6 +5,7 @@ import { About } from './components/sections/About';
 import { Career } from './components/sections/Career';
 import { Research } from './components/sections/Research';
 import { Technical } from './components/sections/Technical';
+import { Credentials } from './components/sections/Credentials';
 import { Contact } from './components/sections/Contact';
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <About />
         <Career />
         <Research />
+        <Credentials />
         <Technical />
         <Contact />
       </div>

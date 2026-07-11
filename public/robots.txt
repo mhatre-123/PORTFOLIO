@@ -1,0 +1,18 @@
+User-agent: *
+Allow: /
+
+# Block crawler access to source configs and dependencies
+Disallow: /node_modules/
+Disallow: /src/
+Disallow: /tsconfig.app.json
+Disallow: /tsconfig.node.json
+Disallow: /tsconfig.json
+Disallow: /vite.config.ts
+Disallow: /postcss.config.js
+Disallow: /tailwind.config.js
+Disallow: /eslint.config.js
+Disallow: /package.json
+Disallow: /package-lock.json
+
+# Declare sitemap location
+Sitemap: https://chaitalimhatre.com/sitemap.xml

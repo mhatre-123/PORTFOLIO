@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
 
-const NAV_ITEMS = ["About", "Education", "Experience", "Research", "Projects", "Contact"];
+const NAV_ITEMS = ["About", "Education", "Experience", "Research", "Certifications", "Projects", "Contact"];
 
 export const Navbar: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -40,15 +40,18 @@ export const Navbar: React.FC = () => {
                 {item}
               </motion.a>
             ))}
-            <motion.button
+            <motion.a
+              href="https://drive.google.com/file/d/1LQKH6_6U9Q932Y273ygIOjKR_plvD2Dr/view"
+              target="_blank"
+              rel="noopener noreferrer"
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="px-6 py-2.5 bg-slate-900 text-white rounded-xl text-xs font-bold uppercase tracking-widest hover:bg-primary-600 transition-colors"
+              className="px-6 py-2.5 bg-slate-900 text-white rounded-xl text-xs font-bold uppercase tracking-widest hover:bg-primary-600 transition-colors inline-block"
             >
               Resume
-            </motion.button>
+            </motion.a>
           </div>
 
           {/* Mobile Toggle */}

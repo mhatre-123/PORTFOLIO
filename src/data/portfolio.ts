@@ -58,14 +58,20 @@ export const PROJECTS = [
 export const RESEARCH = [
   {
     title: "Deep Learning Based System for Early Detection and Classification of Melanoma Skin Cancer – A Systematic Review",
-    journal: "Journal of Carcinogenesis (Scopus Indexed)",
-    link: "#"
+    journal: "Published in Journal of Carcinogenesis, Vol. 24, Issue 2 (2025), pp. 26–34. Journal covered by Scopus; article indexing is pending.",
+    link: "https://drive.google.com/file/d/1loroeEX7f-SJWASBU8ogJtl8htIJjWz8/view"
   }
 ];
 
 export const PATENTS = [
-  { title: "Aqua Drone to Collect Floating Waste from Reservoir" },
-  { title: "System for Predicting Progression of Chronic Kidney Disease" }
+  { 
+    title: "Aqua Drone to Collect Floating Waste from Reservoir",
+    link: "https://drive.google.com/file/d/1xrfUnh97E06WHbCXlU4Jp_HkKjL1zSY2/view"
+  },
+  { 
+    title: "System for Predicting Progression of Chronic Kidney Disease",
+    link: "https://drive.google.com/file/d/1A20oKQkKWwau8foZdASK5ibWOSpMR7ii/view"
+  }
 ];
 
 export const SKILLS = {
@@ -76,11 +82,11 @@ export const SKILLS = {
 };
 
 export const CERTIFICATIONS = [
-  "NPTEL Certification – Machine Learning",
-  "AICTE FDP – Outcome Based Education",
-  "AICTE ATAL Program – Next Gen Computing",
-  "Power BI Data Analyst FDP",
-  "Cyber Security and AI Emerging Technologies FDP"
+  { title: "NPTEL Certification – Machine Learning", link: "https://drive.google.com/file/d/1w8T-UozpuU7dIpb9M-tKILPjIjPaJln2/view" },
+  { title: "AICTE FDP – Outcome Based Education", link: "https://drive.google.com/file/d/1KTQBYhzVQaoJ_V5E_kk4gBdypQHWbcGm/view" },
+  { title: "AICTE ATAL Program – Next Gen Computing", link: "https://drive.google.com/file/d/17LJfboMY5zYW1992TxZcnEzlmAD8q9pw/view" },
+  { title: "Power BI Data Analyst FDP", link: "https://drive.google.com/file/d/1CMBsnkx-hxqxCRu4DMnSs00vmonTVz5e/view" },
+  { title: "Cyber Security and AI Emerging Technologies FDP", link: "https://drive.google.com/file/d/1StLzqbDn_g4mk-0J_sQkTAWVzwx2irOP/view" }
 ];
 
 export const SUBJECTS_TAUGHT = [

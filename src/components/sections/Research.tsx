@@ -21,12 +21,15 @@ export const Research: React.FC = () => {
             
             <div className="space-y-10">
               {RESEARCH.map((res, idx) => (
-                <motion.div 
+                <motion.a 
                   key={idx}
+                  href={res.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
-                  className="group relative bg-white/5 border border-white/10 p-10 rounded-[3rem] hover:bg-white/[0.08] transition-all duration-500"
+                  className="group relative block bg-white/5 border border-white/10 p-10 rounded-[3rem] hover:bg-white/[0.08] transition-all duration-500"
                 >
                   <div className="absolute top-8 right-8 w-14 h-14 bg-primary-500/20 text-primary-400 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
                     <ArrowUpRight size={24} />
@@ -48,11 +51,11 @@ export const Research: React.FC = () => {
                        <Award className="text-primary-500" size={20} />
                        <span className="text-slate-400 font-medium">{res.journal}</span>
                     </div>
-                    <a href={res.link} className="inline-flex items-center gap-2 text-white font-bold hover:text-primary-400 transition-colors ml-auto">
+                    <span className="inline-flex items-center gap-2 text-white font-bold group-hover:text-primary-400 transition-colors ml-auto">
                       Access Paper <ExternalLink size={16} />
-                    </a>
+                    </span>
                   </div>
-                </motion.div>
+                </motion.a>
               ))}
             </div>
           </div>
@@ -64,24 +67,28 @@ export const Research: React.FC = () => {
             </h2>
             <div className="grid gap-6">
               {PATENTS.map((patent, idx) => (
-                <motion.div 
+                <motion.a 
                   key={idx}
+                  href={patent.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   initial={{ opacity: 0, scale: 0.9 }}
                   whileInView={{ opacity: 1, scale: 1 }}
                   viewport={{ once: true }}
                   transition={{ delay: idx * 0.1 }}
-                  className="bg-white/5 backdrop-blur-md p-8 rounded-3xl border border-white/5 flex items-start gap-6 group hover:border-primary-500/50 transition-all"
+                  className="bg-white/5 backdrop-blur-md p-8 rounded-3xl border border-white/5 flex items-start gap-6 group hover:border-primary-500/50 hover:bg-white/[0.08] transition-all cursor-pointer"
                 >
                   <div className="shrink-0 w-16 h-16 bg-gradient-to-br from-primary-500 to-indigo-600 rounded-2xl flex items-center justify-center text-white shadow-xl shadow-primary-500/20 group-hover:rotate-12 transition-transform">
                     <Award size={32} />
                   </div>
-                  <div>
-                    <h4 className="text-xl font-bold leading-tight group-hover:text-primary-400 transition-colors">
+                  <div className="flex-grow">
+                    <h4 className="text-xl font-bold leading-tight group-hover:text-primary-400 transition-colors flex items-center gap-2">
                       {patent.title}
+                      <ArrowUpRight size={18} className="opacity-0 group-hover:opacity-100 transition-opacity shrink-0 text-primary-400" />
                     </h4>
                     <p className="mt-4 text-slate-500 text-sm font-bold uppercase tracking-widest">Patent Granted</p>
                   </div>
-                </motion.div>
+                </motion.a>
               ))}
             </div>
           </div>

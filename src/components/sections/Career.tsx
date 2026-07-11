@@ -6,8 +6,8 @@ import { EDUCATION, EXPERIENCE } from '../../data/portfolio';
 
 export const Career: React.FC = () => {
   return (
-    <section className="section-container">
-      <div className="grid lg:grid-cols-2 gap-20">
+    <section className="bg-white">
+      <div className="section-container grid lg:grid-cols-2 gap-20">
         <div id="education" className="scroll-mt-24">
           <SectionTitle 
             title="Academic Journey" 

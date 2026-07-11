@@ -14,8 +14,9 @@ const EXPERTISE = [
 
 export const About: React.FC = () => {
   return (
-    <section id="about" className="section-container">
-      <div className="grid lg:grid-cols-2 gap-16 items-center">
+    <section id="about" className="bg-slate-900 text-white overflow-hidden py-16 relative">
+      <div className="absolute top-0 right-0 w-96 h-96 bg-primary-500/5 rounded-full blur-[100px]"></div>
+      <div className="section-container grid lg:grid-cols-2 gap-16 items-center relative z-10">
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
           whileInView={{ opacity: 1, scale: 1 }}
@@ -30,13 +31,13 @@ export const About: React.FC = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.1 }}
-                className="glass p-6 rounded-3xl group hover:bg-primary-600 transition-all duration-500"
+                className="glass-dark p-6 rounded-3xl group hover:bg-primary-600 transition-all duration-500"
               >
-                <div className="w-12 h-12 bg-primary-100 text-primary-600 rounded-2xl flex items-center justify-center mb-4 group-hover:bg-white/20 group-hover:text-white transition-colors">
+                <div className="w-12 h-12 bg-primary-500/10 text-primary-400 rounded-2xl flex items-center justify-center mb-4 group-hover:bg-white/20 group-hover:text-white transition-colors">
                   {item.icon}
                 </div>
-                <h4 className="text-lg font-black text-slate-900 mb-2 group-hover:text-white transition-colors">{item.title}</h4>
-                <p className="text-xs text-slate-500 font-medium leading-relaxed group-hover:text-primary-100 transition-colors uppercase tracking-wider">
+                <h4 className="text-lg font-black text-white mb-2 group-hover:text-white transition-colors">{item.title}</h4>
+                <p className="text-xs text-slate-400 font-medium leading-relaxed group-hover:text-primary-100 transition-colors uppercase tracking-wider">
                   {item.desc}
                 </p>
               </motion.div>
@@ -53,13 +54,14 @@ export const About: React.FC = () => {
           <SectionTitle 
             title="Professional Vision & Expertise" 
             subtitle="Who I Am" 
+            light
           />
-          <div className="space-y-6 text-xl text-slate-600 leading-relaxed font-medium">
+          <div className="space-y-6 text-xl text-slate-300 leading-relaxed font-medium">
             <p>
-              As an <span className="text-slate-900 font-bold">Assistant Professor</span> in Computer Engineering, 
+              As an <span className="text-white font-bold">Assistant Professor</span> in Computer Engineering, 
               my focus lies at the intersection of academic rigors and technological innovation.
             </p>
-            <p className="bg-primary-50 p-6 rounded-3xl border-l-8 border-primary-500 italic text-primary-900">
+            <p className="bg-primary-500/10 p-6 rounded-3xl border-l-8 border-primary-500 italic text-primary-200">
               "My mission is to advance the fields of AI and Blockchain while empowering the next 
               generation of engineers with practical, research-driven knowledge."
             </p>
