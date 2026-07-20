@@ -1,4 +1,5 @@
 export const EDUCATION = [
+  { year: "Pursuing", degree: "PHD - Pursuing", institute: "NMIMS", score: "Ongoing" },
   { year: "2024", degree: "Master of Engineering – Computer Engineering", institute: "Vidyavardhini's College of Engineering", score: "CGPI 8.08" },
   { year: "2021", degree: "Bachelor of Engineering – Computer Engineering", institute: "University of Mumbai", score: "60.57%" },
   { year: "2018", degree: "Diploma in Computer Engineering", institute: "Polytechnic", score: "67.24%" },

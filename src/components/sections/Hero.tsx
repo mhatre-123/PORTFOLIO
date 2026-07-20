@@ -4,12 +4,12 @@ import { FileText, ChevronRight, BookOpen, GraduationCap, Brain } from 'lucide-r
 
 export const Hero: React.FC = () => {
   return (
-    <section id="home" className="relative lg:h-screen lg:min-h-[650px] flex items-center pt-20 pb-12 lg:pt-32 lg:pb-12 overflow-hidden bg-white">
+    <section id="home" className="relative lg:h-screen lg:min-h-[700px] flex items-center pt-28 pb-12 lg:pt-36 lg:pb-16 overflow-hidden bg-white">
       {/* Background Ambience - Subtle Gradients */}
       <div className="absolute inset-0 -z-10 bg-[radial-gradient(45%_40%_at_50%_50%,rgba(14,165,233,0.08)_0%,transparent_100%)]"></div>
       <div className="absolute top-[-10%] right-[-5%] w-[40%] h-[40%] bg-indigo-50/50 blur-[120px] rounded-full -z-10 animate-pulse"></div>
 
-      <div className="section-container !py-0 lg:!py-16 relative grid lg:grid-cols-12 gap-10 lg:gap-12 items-center lg:-mt-12">
+      <div className="section-container !py-0 lg:!py-16 relative grid lg:grid-cols-12 gap-10 lg:gap-12 items-center">
         {/* Left Content */}
         <div className="lg:col-span-7 order-2 lg:order-1 mt-6 lg:mt-0">
           <motion.div
@@ -35,12 +35,12 @@ export const Hero: React.FC = () => {
                 <span className="text-xs sm:text-base lg:text-lg font-bold text-slate-800">Computer Engineering</span>
               </div>
               <div className="flex items-center gap-2 sm:gap-3 px-3.5 py-1.5 sm:px-5 sm:py-2.5 bg-primary-600 text-white shadow-xl shadow-primary-500/20 rounded-2xl">
-                <BookOpen size={18} />
-                <span className="text-xs sm:text-base lg:text-lg font-bold">Research Expert</span>
+                <GraduationCap size={18} />
+                <span className="text-xs sm:text-base lg:text-lg font-bold">PHD - Pursuing in NMIMS</span>
               </div>
-              <div className="flex lg:hidden items-center gap-2 px-3.5 py-1.5 bg-slate-50 border border-slate-200 rounded-2xl shadow-sm">
-                <Brain className="text-primary-600" size={16} />
-                <span className="text-xs font-bold text-slate-800">AI Expert</span>
+              <div className="flex items-center gap-2 sm:gap-3 px-3.5 py-1.5 sm:px-5 sm:py-2.5 bg-slate-50 border border-slate-200 rounded-2xl shadow-sm">
+                <BookOpen className="text-primary-600" size={18} />
+                <span className="text-xs sm:text-base lg:text-lg font-bold text-slate-800">Research Scholar</span>
               </div>
             </div>
 
