@@ -58,7 +58,7 @@ export const About: React.FC = () => {
           />
           <div className="space-y-6 text-xl text-slate-300 leading-relaxed font-medium">
             <p>
-              As an <span className="text-white font-bold">Assistant Professor</span> in Computer Engineering and a <span className="text-white font-bold">Ph.D. Scholar at NMIMS</span>, 
+              As an <span className="text-white font-bold">Assistant Professor</span> in Computer Engineering and a <span className="text-white font-bold">Ph.D. Scholar in IT at NMIMS</span>, 
               my focus lies at the intersection of academic rigors and technological innovation.
             </p>
             <p className="bg-primary-500/10 p-6 rounded-3xl border-l-8 border-primary-500 italic text-primary-200">

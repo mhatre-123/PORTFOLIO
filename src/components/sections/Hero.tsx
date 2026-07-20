@@ -36,7 +36,7 @@ export const Hero: React.FC = () => {
               </div>
               <div className="flex items-center gap-2 sm:gap-3 px-3.5 py-1.5 sm:px-5 sm:py-2.5 bg-primary-600 text-white shadow-xl shadow-primary-500/20 rounded-2xl">
                 <GraduationCap size={18} />
-                <span className="text-xs sm:text-base lg:text-lg font-bold">PHD - Pursuing in NMIMS</span>
+                <span className="text-xs sm:text-base lg:text-lg font-bold">PHD in IT - Pursuing in NMIMS</span>
               </div>
               <div className="flex items-center gap-2 sm:gap-3 px-3.5 py-1.5 sm:px-5 sm:py-2.5 bg-slate-50 border border-slate-200 rounded-2xl shadow-sm">
                 <BookOpen className="text-primary-600" size={18} />
