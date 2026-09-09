@@ -4,12 +4,12 @@ import { FileText, ChevronRight, BookOpen, GraduationCap, Brain } from 'lucide-r
 
 export const Hero: React.FC = () => {
   return (
-    <section id="home" className="relative lg:h-screen lg:min-h-[700px] flex items-center pt-28 pb-12 lg:pt-36 lg:pb-16 overflow-hidden bg-white">
+    <section id="home" className="relative pt-20 pb-12 lg:pt-24 lg:pb-16 overflow-hidden bg-white">
       {/* Background Ambience - Subtle Gradients */}
       <div className="absolute inset-0 -z-10 bg-[radial-gradient(45%_40%_at_50%_50%,rgba(14,165,233,0.08)_0%,transparent_100%)]"></div>
       <div className="absolute top-[-10%] right-[-5%] w-[40%] h-[40%] bg-indigo-50/50 blur-[120px] rounded-full -z-10 animate-pulse"></div>
 
-      <div className="section-container !py-0 lg:!py-16 relative grid lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+      <div className="section-container !py-0 relative grid lg:grid-cols-12 gap-10 lg:gap-12 items-center">
         {/* Left Content */}
         <div className="lg:col-span-7 order-2 lg:order-1 mt-6 lg:mt-0">
           <motion.div
